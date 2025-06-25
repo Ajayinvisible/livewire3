@@ -6,12 +6,12 @@ use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Layout('layout.app')]
-#[Title('User page title')]
+// #[Layout('layout.app')]
+// #[Title('User page title')]
 class UsersPage extends Component
 {
     public function render()
     {
-        return view('livewire.users-page');
+        return view('livewire.users-page')->layout('layout.app')->title('User page title');
     }
 }
