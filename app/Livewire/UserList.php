@@ -15,13 +15,12 @@ class UserList extends Component
 
     public function update()
     {
-        // $this->resetPage();
+        $this->resetPage();
     }
 
     public function mount($search)
     {
         $this->search = $search;
-        unset($this->users);
     }
 
     #[Computed()]
