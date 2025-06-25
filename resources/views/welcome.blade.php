@@ -18,8 +18,7 @@
     </head>
 
     <body>
-        {{-- @livewire('user-list') --}}
-        <livewire:user-list search="A"/>
+        
     </body>
 
 </html>
