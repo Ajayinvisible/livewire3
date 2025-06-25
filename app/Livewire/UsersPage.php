@@ -2,16 +2,22 @@
 
 namespace App\Livewire;
 
-use Livewire\Attributes\Layout;
+use App\Models\User;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-// #[Layout('layout.app')]
-// #[Title('User page title')]
+#[Title('Users page')]
 class UsersPage extends Component
 {
+
+    public $user;
+
+    public function mount(User $user)
+    {
+        $this->user = $user;
+    }
     public function render()
     {
-        return view('livewire.users-page')->layout('layout.app')->title('User page title');
+        return view('livewire.users-page');
     }
 }
