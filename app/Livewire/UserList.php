@@ -17,6 +17,11 @@ class UserList extends Component
         // $this->resetPage();
     }
 
+    public function mount($search)
+    {
+        $this->search = $search;
+    }
+    
     public function render()
     {
         $users = User::orderBy('created_at', 'desc')
