@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($users as $key => $user)
+            @foreach($this->users as $key => $user)
                 <tr>
                     <td class="px-6 py-4 border">{{ ++$key }}</td>
                     <td class="px-6 py-4 border">{{ $user->name }}</td>
@@ -31,5 +31,5 @@
         </tbody>
     </table>
 
-    {{ $users->links() }}
+    {{ $this->users->links() }}
 </div>
