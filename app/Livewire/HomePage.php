@@ -8,6 +8,7 @@ use Livewire\Component;
 
 // #[Layout('layout.app')]      // Uncomment this line to set a layout for the component
 // #[Title('Home page title')]  // Uncomment this line to set a title for the component
+//update
 class HomePage extends Component
 {
     public function render()
