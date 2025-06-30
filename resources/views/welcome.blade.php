@@ -18,7 +18,7 @@
     </head>
 
     <body>
-        
+        @livewire('contact-us')
     </body>
 
 </html>
