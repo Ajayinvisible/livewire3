@@ -17,7 +17,7 @@ class ContactUs extends Component
         // sending email
         $this->form->sendEmail();
 
-        session()->flash('success', 'Your message has been sent successfully!');
+        session()->flash('success', 'Your message has been sent successfully to admin!');
 
         $this->form->reset();
     }
