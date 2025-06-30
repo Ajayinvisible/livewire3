@@ -16,6 +16,7 @@ class UsersPage extends Component
     {
         $this->user = $user;
     }
+    
     public function render()
     {
         return view('livewire.users-page');
